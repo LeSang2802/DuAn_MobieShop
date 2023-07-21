@@ -1,0 +1,190 @@
+body{
+    font-family: Arial;
+    font-size: 13px;
+    color: #333;
+}
+
+#header{
+    background: #222;
+}
+#logo, #search, #cart{
+    height:60px;
+}
+#search, #cart{
+    padding-top: 10px;
+}
+#search input{
+    width: 280px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 13px;
+    border-radius: 3px 0 0 3px;
+    border: none;
+}
+
+#search button{
+    height:30px;
+    background: #eb1f27;
+    font-size: 13px;
+    color: #fff;
+    border-radius: 0 3px 3px 0;
+    border: none;
+}
+
+#cart{
+    text-align: right;
+}
+
+#cart a, #cart span{
+    color: #fff;
+}
+#cart span{
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+    background: #eb1f27;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+/* -------------Body ----------- */
+#body{
+    background: #e7ecf4;
+    padding-bottom: 25px;
+}
+#menu{
+    /* background: #eb1f27; */
+}
+#menu ul{
+    padding-left: 0;
+    background: #eb1f27;
+    overflow: hidden;
+}
+.menu-item{
+    float: left;
+    list-style: none;
+    height: 40px;
+    line-height: 40px;
+    padding:0 15px;
+    border-right: 1px solid #c60a11;
+}
+.menu-item a{
+    text-decoration: none;
+    color: #fff;
+}
+.menu-item:hover{
+    cursor: pointer;
+    background: #C60A11;
+}
+.menu-item a:hover{
+    text-decoration: underline;
+}
+
+/* ------Sidebar--------- */
+
+.banner-item{
+    margin-bottom: 10px;
+}
+
+/* ----End Sidebar------- */
+
+/* -----Featured Product --- */
+ .products{
+    margin-top:20px;
+ }
+
+ .products h3{
+    font-family: Arial;
+    font-size: 18px;
+ }
+ .product-list{
+    margin-left: -5px;
+    margin-right: -5px;
+}
+.products-item{
+    text-align: center;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-top: 10px; 
+}
+.products-item img{
+    width: 130px;
+    height: 160px;
+    margin-bottom: 10px;
+}
+.products-item h4{
+    font-size: 13px;
+    font-weight: bold;
+}
+.products-item h4 a{
+    color: #333;
+    text-decoration: none;
+}
+.products-item p {
+    text-transform: capitalize;
+}
+.products-item p span{
+    color: #eb1f27;
+    font-weight: bold;
+}
+/* -----Footer Top---- */
+#footer-t{
+    padding-bottom: 25px;
+    padding-top: 25px;
+}
+#logo-f p{
+    text-align: justify;
+}
+#footer-t h3{
+    border-bottom: #333 solid 1px;
+    padding-bottom: 15px;
+    margin-bottom: 12px;
+    font-size: 18px;
+}
+/* ----Footer Bottom---- */
+#footer-b{
+    background: #1d1e24;
+    /* padding-top: 12px;
+    padding-bottom: 12px; */
+}
+#footer-b p{
+    color: #a1b1bc;
+    font-size: 13px;
+    padding-top: 14px;
+    padding-bottom: 14px;
+    margin: 0;
+}
+
+/* -----------Resposive --------------*/
+/* tablet */
+@media(max-width: 992px){
+    #banner{
+        display: none;
+    }
+}
+/* phone */
+@media(max-width: 768px){
+    #cart{
+        text-align: left;
+    }
+    #slider{
+        display: none; 
+    }
+    .menu-item{
+        float:none;
+        border-right: none;
+        border-bottom: 1px solid #C60A11;
+    }
+    #logo h1 button{
+        background: #fff;
+        float: right;
+        margin-top: 10px;
+    }
+}
+
+@media(min-width: 768px){
+    #menu{
+        display: block;
+    }
+}
